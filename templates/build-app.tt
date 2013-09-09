@@ -1,0 +1,8 @@
+xcodebuild -sdk iphonesimulator6.0 \
+  -workspace <%= path -%> \
+  -scheme <%= name -%> \
+  ONLY_ACTIVE_ARCH=NO \
+  TARGETED_DEVICE_FAMILY=1 \
+  DEPLOYMENT_LOCATION=YES \
+  DSTROOT=`pwd`/app
+
